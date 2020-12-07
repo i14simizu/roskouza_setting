@@ -19,3 +19,10 @@ RUN apt install -y ros-melodic-gazebo-ros-control ros-melodic-ros-control ros-me
 
 # Rvizを使うための準備
 RUN apt install -y ros-melodic-rviz
+
+# Rvizに対応するコントローラを使う準備
+RUN apt install -y ros-melodic-joint-state-publisher-gui
+RUN apt install -y ros-melodic-robot-state-publisher
+
+# PDF readerの準備
+RUN apt install evince
