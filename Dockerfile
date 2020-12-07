@@ -15,6 +15,8 @@ RUN apt install -y ros-melodic-rqt-common-plugins
 RUN apt install -y x11-apps
 
 # Gazeboを使うための準備
+RUN apt install -y ros-melodic-ros-control
+RUN apt install -y ros-melodic-gazebo-ros-pkgs
 RUN apt install -y ros-melodic-gazebo-ros-control ros-melodic-ros-control ros-melodic-ros-controllers
 
 # Rvizを使うための準備
@@ -29,3 +31,7 @@ RUN apt install -y liburdfdom-tools
 
 # PDF readerの準備
 RUN apt install evince
+
+# rqt-ez-publisherの準備
+RUN apt install ros-melodic-rqt-ez-publisher
+
