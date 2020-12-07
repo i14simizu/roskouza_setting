@@ -24,5 +24,8 @@ RUN apt install -y ros-melodic-rviz
 RUN apt install -y ros-melodic-joint-state-publisher-gui
 RUN apt install -y ros-melodic-robot-state-publisher
 
+# urdfのチェックツールを準備
+RUN apt install -y liburdfdom-tools
+
 # PDF readerの準備
 RUN apt install evince
