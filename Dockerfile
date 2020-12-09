@@ -30,8 +30,8 @@ RUN apt install -y ros-melodic-robot-state-publisher
 RUN apt install -y liburdfdom-tools
 
 # PDF readerの準備
-RUN apt install evince
+RUN apt install -y evince
 
 # rqt-ez-publisherの準備
-RUN apt install ros-melodic-rqt-ez-publisher
+RUN apt install -y ros-melodic-rqt-ez-publisher
 
