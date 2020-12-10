@@ -35,3 +35,5 @@ RUN apt install -y evince
 # rqt-ez-publisherの準備
 RUN apt install -y ros-melodic-rqt-ez-publisher
 
+# teleopの準備
+RUN apt install -y ros-melodic-teleop-twist-keyboard
